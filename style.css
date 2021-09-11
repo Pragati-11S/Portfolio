@@ -35,12 +35,13 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .services, .skills, .projects, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
 .services .serv-content,
 .skills .skills-content,
+.projects .skills-content,
 .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
@@ -111,7 +112,7 @@ section .title::after{
 .navbar .menu li{
     list-style: none;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 0px;
     display: inline-block;
 }
 .navbar .menu li a{
@@ -358,8 +359,7 @@ section .title::after{
     color:#fff;
     background: #111;
 }
-.services .title::before,
-.teams .title::before{
+.services .title::before{
     background: #fff;
 }
 .services .title::after{
@@ -706,6 +706,10 @@ footer span a:hover{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
+	.projects .carousel .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
     .skills .skills-content .column,
     .contact .contact-content .column{
         width: 100%;
@@ -727,6 +731,9 @@ footer span a:hover{
         font-size: 20px;
     }
     .services .serv-content .card{
+        width: 100%;
+    }
+	.projects .carousel .card{
         width: 100%;
     }
 }
